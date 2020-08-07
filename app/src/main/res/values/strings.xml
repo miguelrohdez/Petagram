@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Petagram</string>
+    <string name="action_btn">SeFav</string>
 </resources>
