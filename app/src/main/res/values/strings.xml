@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Petagram</string>
     <string name="action_btn">SeFav</string>
+    <string name="titulo_tarjeta">Ilusion 1</string>
+    <string name="descripcion_tarjeta">Una que tenia por ahi guardada</string>
 </resources>

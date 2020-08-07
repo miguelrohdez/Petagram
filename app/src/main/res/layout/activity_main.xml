@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
     //Coordinator
     <RelativeLayout
@@ -36,8 +37,53 @@
             android:clickable="true"
             android:elevation="6dp"
             />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="300dp"
+            android:id="@+id/cardV"
+            android:layout_below="@+id/btnFav"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="4dp"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgImagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img1"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/txtImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_tarjeta"
+                    android:layout_below="@id/imgImagen"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                        android:id="@+id/txtDesImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descripcion_tarjeta"
+                        android:layout_below="@id/txtImg"
+                        />
 
 
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
 
 
